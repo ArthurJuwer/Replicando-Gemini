@@ -9,23 +9,23 @@
   </head>
   <body>
     <div id="app">
-      <header>
+      <div class="title">
         <h1>Gemini Juwer</h1>
-        <hr>
-      </header>
-
-      <div class="repostaCaixa">
-        <p class="respostaIA" id="respostaIA"></p>
       </div>
-      
-      <div class="perguntaCaixa">
-        <input type="text" name="perguntaUsuario" id="perguntaUsuario" placeholder="Digite sua pergunta aqui: ">
-        <button id="perguntaEnviar"> > </button>
+      <div class="chatWrapper">
+        <div class="messages">
+          <div class="message botMessage">
+            <p>Oi, tudo bem como posso ajudar você?</p>
+          </div>
+        </div>
       </div>
-      
+      <div class="inputArea">
+        <input type="text" id="perguntaUsuario" placeholder="Digite sua mensagem...">
+        <button id="perguntaEnviar">
+          <img src="./src/images/send.png" alt="Enviar">
+        </button>
+      </div>
     </div>
-    
     <script type="module" src="./main.js"></script>
-
   </body>
 </html>
